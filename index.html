@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:800,900" rel="stylesheet">
+  <title>Trainspotter</title>
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+
+      </div>
+      <div class="col-sm-8 text-center">
+
+        <div id="schedule">
+          <div class="card mb-4">
+            <div class="card-header">TRAIN SCHEDULE</div>
+            <div class="card-body">
+              <table class="table table-sm table-hover" id='schedule-table'>
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (in minutes)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-sm-2 sidenav">
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <footer class="container-fluid text-center background-cover">
+    <h1 id=title>Trainspotter.</h1>
+
+  </footer>
+  <div id="add-a-train" class="container-fluid text-center background-cover">
+    <!-- Add Employee  -->
+    <div class="card mb-4">
+      <div class="card-header"></div>
+      <div class="card-body">
+
+        <!-- Entry Form -->
+        <form>
+          <div class="form-group">
+            <label for="train-name-input">Train Name</label>
+            <input class="form-control" id="train-name-input" placeholder="Thomas the Tank Engine" type="text">
+          </div>
+          <div class="form-group">
+            <label for="destination-input">Destination</label>
+            <input class="form-control" id="destination-input" placeholder="Sodor Station" type="text">
+          </div>
+          <div class="form-group">
+            <label for="first-train-input">First Train (HH:mm)24hr</label>
+            <input class="form-control" id="first-train-input" placeholder="12:30" type="text">
+          </div>
+          <div class="form-group">
+            <label for="frequency-input">Frequency (in minutes)</label>
+            <input class="form-control" id="frequency-input" placeholder="90" type="text">
+          </div>
+          <button class="btn btn-primary float-right" id="new-train-btn">Log Your Train</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script src="assets/js/javascript.js"></script>
+
+</body>
+
+</html>
